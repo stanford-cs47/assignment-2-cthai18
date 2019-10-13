@@ -1,6 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Images, Profiles } from './App/Themes';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { Images, Profiles, Metrics } from './App/Themes';
+
+import NavigationBar from './App/Components/NavigationBar';
+// const { width, height } = Dimensions.get('window')
 
 export default class App extends React.Component {
   constructor() {
@@ -18,8 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This is your workspace. Have fun!</Text>
-        <Text>(Hint: Peep the App folder)</Text>
+        <NavigationBar />
       </View>
     );
   }
