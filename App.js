@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { Images, Profiles, Metrics } from './App/Themes';
 
 import NavigationBar from './App/Components/NavigationBar';
+import ProfilePictureCard from './App/Components/ProfilePictureCard';
 // const { width, height } = Dimensions.get('window')
 
 export default class App extends React.Component {
@@ -22,6 +23,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <NavigationBar />
+        <ProfilePictureCard profile={this.state}/>
       </View>
     );
   }
@@ -32,6 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: 'whitesmoke',
   },
 });

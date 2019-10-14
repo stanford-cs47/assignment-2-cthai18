@@ -43,31 +43,31 @@ export default class NavigationBar extends React.Component {
 
 const styles = StyleSheet.create({
   navigationBar: {
-    // width: 50,
     width: width,
-    height: height,
-    // width: Metrics.screenWidth,
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    borderBottomWidth: 1,
+    marginTop: 15,
+    padding: 10,
+    paddingLeft: width * .03,
+    paddingRight: width * .03,
   },
   settings: {
-    flex: 1,
-    height: 40,
-    width: 40,
-    resizeMode: 'contain'
+    height: 50,
+    width: 50,
+    resizeMode: 'contain',
+    tintColor: '#C5C5C5',
   },
   logo: {
-    flex: 1,
     height: 40,
-    width: 40,
+    width: 100,
     resizeMode: 'contain',
   },
   chat: {
-    flex:1,
-    height: 40,
-    width: 40,
+    height: 50,
+    width: 50,
     resizeMode: 'contain',
+    tintColor: '#C5C5C5',
   }
 });
