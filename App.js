@@ -4,7 +4,7 @@ import { Images, Profiles, Metrics } from './App/Themes';
 
 import NavigationBar from './App/Components/NavigationBar';
 import ProfilePictureCard from './App/Components/ProfilePictureCard';
-// const { width, height } = Dimensions.get('window')
+import ButtonsBar from './App/Components/ButtonsBar';
 
 export default class App extends React.Component {
   constructor() {
@@ -24,6 +24,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <NavigationBar />
         <ProfilePictureCard profile={this.state}/>
+        <ButtonsBar/>
       </View>
     );
   }
