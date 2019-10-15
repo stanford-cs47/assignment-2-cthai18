@@ -5,7 +5,8 @@ import {
   View,
   Image,
   Dimensions,
-  TouchableOpacity
+  TouchableOpacity,
+  Platform
 } from 'react-native';
 
 import {
@@ -44,6 +45,7 @@ export default class NavigationBar extends React.Component {
 const styles = StyleSheet.create({
   navigationBar: {
     width: width,
+    height: (Platform.OS === 'ios') ? 44 : 56,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -54,8 +56,8 @@ const styles = StyleSheet.create({
     paddingRight: width * .03,
   },
   settings: {
-    height: 50,
-    width: 50,
+    height: 40,
+    width: 40,
     resizeMode: 'contain',
     tintColor: '#C5C5C5',
   },
@@ -65,8 +67,8 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   chat: {
-    height: 50,
-    width: 50,
+    height: 40,
+    width: 40,
     resizeMode: 'contain',
     tintColor: '#C5C5C5',
   }
